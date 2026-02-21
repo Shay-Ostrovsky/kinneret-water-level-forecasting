@@ -46,7 +46,7 @@
 
 ## 🏅 Model Performance
 
-| Model | MAE | RMSE | MAPE | R² |
+| Model | MAE | RMSE | MAPE |
 |---|---|---|---|---|
 | **XGBoost** ✅ | **0.3499** | **0.3806** | **0.16%** |
 | LightGBM | 0.5571 | 0.5927 | 0.0026% |
