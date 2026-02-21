@@ -48,10 +48,10 @@
 
 | Model | MAE | RMSE | MAPE | R² |
 |---|---|---|---|---|
-| **XGBoost** ✅ | **0.3499** | **0.3806** | **0.16%** | — |
-| LightGBM | — | 0.3292 (CV) | — | — |
-| ARIMA | 1.2483 | 1.4852 | 0.59% | — |
-| ETS | 3.5688 | 4.1515 | 1.68% | -25.70 |
+| **XGBoost** ✅ | **0.3499** | **0.3806** | **0.16%** |
+| LightGBM | 0.5571 | 0.5927 | 0.0026% |
+| ARIMA | 1.2483 | 1.4852 | 0.59% |
+| ETS | 3.5688 | 4.1515 | 1.68% |
 
 > XGBoost achieved a **72% MAE reduction** and **74% RMSE reduction** over the ARIMA baseline.
 
@@ -86,9 +86,7 @@ kinneret-water-level-forecasting/
 │
 ├── kinneret_water_level.ipynb   # Full pipeline: EDA → features → models → forecasting
 ├── xgboost_final.pkl            # Trained XGBoost model (full dataset)
-├── lightgbm_final.pkl           # Trained LightGBM model (full dataset)
 ├── requirements.txt             # Python dependencies
-├── index.html                   # Project page (GitHub Pages)
 │
 └── images/
     ├── chart_comparison.png     # All models vs actual (test set)
